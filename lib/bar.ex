@@ -13,9 +13,9 @@ defmodule Bar do
 
   """
   def test do
-    # Foo.func(1)
+    Foo.func()
 
-    with whatever <- Foo.func(1) do
+    with whatever <- Foo.func(1, 2) do
       IO.inspect(whatever)
     end
   end
